@@ -1,0 +1,355 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Paleta de Colores 
+    #7C3E66
+    #243A73
+    #A5BECC
+    #F2EBE9 */
+
+body {
+    background-color: #F2EBE9;
+}
+
+header {
+    background-color: #A5BECC;
+    padding: 20px;
+}
+
+header nav {
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6,legend,label {
+    color: #7C3E66;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p,main,li,select,fieldset {
+    font-family: 'Roboto', sans-serif;
+}
+
+ol {
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+    color: #243A73;
+    background-color: #A5BECC;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slider-principal {
+    background-color: #ffe9e9;
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #243A73;
+}
+
+.slider-principal section {
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 20px 10px;
+    width: 450px;
+}
+
+.slider-principal img {
+    margin: 60px;
+}
+
+@media (max-width: 768px) {
+    .slider-principal {
+        flex-direction: column;
+    }
+    
+    .slider-principal section {
+        width: auto;
+    }
+}
+
+.button {
+    background-color: #243A73;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navigation-bar-item {
+    padding-right: 20px;
+}
+
+.image-skills{
+    max-width: 100%;
+}
+
+.navigation-bar-item a {
+    font-family: 'Quicksand', sans-serif;
+    color: #243A73;
+    text-decoration: none;
+}
+
+.image-profile {
+    max-width: 100%;
+    box-shadow: 2px 2px 20px #555555;
+    border-radius: 40px;
+}
+
+.title-services {
+    text-align: center;
+}
+
+.title-page-services {
+    text-align: center;
+    color: white;
+}
+
+div {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.social-media {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    padding-right: 10px;
+    width: 20px;
+}
+
+.social-media ul {
+    display: flex;
+}
+
+.btn-submit {
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #7C3E66;
+    padding: 20px;
+}
+
+.btn-reset {
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #7C3E66;
+    padding: 20px;
+}
+
+/* Página de Servicios */
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.slider-item {
+    max-width: 260px;
+    max-height: 160px;
+    padding-right: 60px;
+}
+
+.slider-services {
+    background: linear-gradient(rgba(0, 29, 122, 0.70), rgba(0, 29, 112, 0.70)), url("https://cronicaglobal.elespanol.com/uploads/s1/86/70/61/5/teletrabajo.jpeg");
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 120px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    max-width: 780px;
+    margin: auto;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    place-items: center;
+    overflow: hidden;
+    padding: 1rem;
+    width: 90%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: solid #243A73;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+@media (min-width: 600px) {
+    .card {
+        height: 270px;
+    }
+}
+
+.card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background: rgb(130, 155, 168);
+    background: linear-gradient(90deg, rgba(130, 155, 168, 1) 0%, rgba(165, 190, 204, 1) 84%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border-radius: 20px;
+    background-color: #243A73;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #7C3E66;
+}
+
+.btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
+
+
+@media (hover: hover) and (min-width: 600px) {
+    .card:after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(60% - 4.5rem));
+    }
+
+    .content>*:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .card:hover,
+    .card:focus-within {
+        align-items: center;
+    }
+
+    .card:hover:before,
+    .card:focus-within:before {
+        transform: translateY(-4%);
+    }
+
+    .card:hover:after,
+    .card:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card:hover .content,
+    .card:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card:hover .content>*:not(.title),
+    .card:focus-within .content>*:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+    }
+
+    .card:focus-within:before,
+    .card:focus-within:after,
+    .card:focus-within .content,
+    .card:focus-within .content>*:not(.title) {
+        transition-duration: 0s;
+    }
+}
