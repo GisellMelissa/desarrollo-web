@@ -89,6 +89,12 @@ footer {
     font-size: 16px;
 }
 
+.button:hover{
+    background-color: #7C3E66;
+    outline: 1.5px dashed #000000;
+    outline-offset: 3px;
+}
+
 .navigation-bar {
     display: flex;
     flex-direction: row;
@@ -114,6 +120,10 @@ footer {
     max-width: 100%;
     box-shadow: 2px 2px 20px #555555;
     border-radius: 40px;
+}
+
+.image-profile:hover {
+    transform: scale(1.1);
 }
 
 .title-services {
@@ -241,6 +251,10 @@ div {
     background-color: whitesmoke;
 }
 
+.card:hover{
+    box-shadow: 2px 2px 20px #666666;
+}
+
 @media (min-width: 600px) {
     .card {
         height: 270px;
@@ -296,13 +310,9 @@ div {
 
 .btn:hover {
     background-color: #7C3E66;
-}
-
-.btn:focus {
-    outline: 1px dashed yellow;
+    outline: 1.5px dashed #000000;
     outline-offset: 3px;
 }
-
 
 @media (hover: hover) and (min-width: 600px) {
     .card:after {
