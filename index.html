@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -17,8 +18,8 @@
     <!-- Logo + nav -->
     <header>
         <!-- Encabezado -->
-        <nav class="navigation">
-            <ul class="navigation-bar">
+        <nav class="navigation row">
+            <ul class="navigation-bar col-md-4 offset-md-8">
                 <li class="navigation-bar-item">
                     <a href="./index.html">Inicio</a>
                 </li>
@@ -38,80 +39,105 @@
         </nav>
     </header>
     <!-- Cierre Barra de navegación -->
-    <main class="slider-principal">
+    <section class="slider-principal">
         <!-- No es una etiqueta semàntica -->
-        <img src="./images/20220621_003423.jpg" alt="Paseo Melissa" width="320px" class="image-profile">
-        <section>
-            <!-- Etiqueta semántica -->
-            <h1>Hola, soy Melissa Gómez</h1>
-            <!-- Etiqueta semántica -->
-            <b>
-                <p>Orgullosamente Colombiana</p>
-            </b>
-            <p>Soy una joven de 20 años, apasionada <b>Front-End Web Developer</b>. Cuento con conocimientos básicos en
-                creación de aplicaciones y experiencias interactivas en la web.</p>
-            <a href="https://api.whatsapp.com/send?phone=573103655197">
-                <h3 class="button">Contáctame</h3>
-            </a>
-        </section>
-    </main>
-    <div class="video-container">
-        <h2>¿Qué hace un Front-end Web Developer?</h2>
-        <p>Es la persona encargada de diseñar la interfaz de usuario de los sitios web. Dale clic al video y <br>
-            te explico de forma clara y sencilla mis conocimientos y cómo te podría ayudar.</p>
-
-        <div class="embed-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/e0NwBRUbE38"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <h2 class="title-services">Servicios Principales</h2>
-    <main class="page-content">
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Tiendas Virtuales (e-Commerce)</h2>
-                <p class="copy">La transformación digital ha pasado de ser una opción, a convertirse en una necesidad,
-                    es la nueva era para los negocios.</p>
-                <button class="btn">Ver todos los servicios</button>
+        <div class="slider-principal-items row">
+            <div class="col-md-6 image-container">
+                <img src="./images/20220621_003423.jpg" alt="Paseo Melissa" width="320px" class="image-profile">
+            </div>
+            <div class="col-md-6">
+                <!-- Etiqueta semántica -->
+                <h1>Hola, soy Melissa Gómez</h1>
+                <!-- Etiqueta semántica -->
+                <b>
+                    <p>Orgullosamente Colombiana</p>
+                </b>
+                <p>Soy una joven de 20 años, apasionada <b>Front-End Web Developer</b>. Cuento con conocimientos básicos
+                    en creación de aplicaciones y experiencias interactivas en la web.</p>
+                <a href="https://api.whatsapp.com/send?phone=573103655197">
+                    <h3 class="button">Contáctame</h3>
+                </a>
             </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Páginas Web Informativas y Coorporativas</h2>
-                <p class="copy">Tu sitio web en base a la imagen de tu empresa, teniendo en cuenta las últimas
-                    tendencias de diseño.</p>
-                <button class="btn">Ver todos los servicios</button>
+    </section>
+    <section class="video-container">
+        <div class="video-container-items row">
+            <div class="col-md-12">
+                <h2>¿Qué hace un Front-end Web Developer?</h2>
+                <p>Es la persona encargada de diseñar la interfaz de usuario de los sitios web. Dale clic al video y <br>
+                    te explico de forma clara y sencilla mis conocimientos y cómo te podría ayudar.</p>
+            </div>
+            <div class="col-md-12">
+                <div class="embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e0NwBRUbE38"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Aplicaciones Web Dinámicas</h2>
-                <p class="copy">Software a la medida de las necesidades de tu negocio donde permiten a los usuarios
-                    acceder a información de forma sencilla.</p>
-                <button class="btn">Ver todos los servicios</button>
+    </section>
+    <section class="services-container">
+        <div class="services-container-items row">    
+            <div class="col-md-12">
+                <h2 class="title-services">Servicios Principales</h2>
+                <div class="page-content row">
+                    <div class="card col-md-4">
+                        <div class="content">
+                            <h2 class="title">Tiendas Virtuales (e-Commerce)</h2>
+                            <p class="copy">La transformación digital ha pasado de ser una opción, a convertirse en una necesidad,
+                                es la nueva era para los negocios.</p>
+                            <button class="btn">Ver todos los servicios</button>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <div class="content">
+                            <h2 class="title">Páginas Web Informativas y Coorporativas</h2>
+                            <p class="copy">Tu sitio web en base a la imagen de tu empresa, teniendo en cuenta las últimas
+                                tendencias de diseño.</p>
+                            <button class="btn">Ver todos los servicios</button>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <div class="content">
+                            <h2 class="title">Aplicaciones Web Dinámicas</h2>
+                            <p class="copy">Software a la medida de las necesidades de tu negocio donde permiten a los usuarios
+                                acceder a información de forma sencilla.</p>
+                            <button class="btn">Ver todos los servicios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-items row">
+            <div class="col-md-12">
+                <h2>Conocimientos y habilidades</h2>
+                <p>Habilidades en herramientas web y conocimientos precisos, te nombro algunas a continuación:</p>
+                <progress value="80" max="100"></progress><span>HTML (HyperText Markup Language)</span>
+                <progress value="70" max="100"></progress><span>CSS (Cascading Style Sheets)</span>
+                <progress value="60" max="100"></progress><span>JavaScript</span>
+                <progress value="50" max="100"></progress><span>React Js</span>
+                <progress value="80" max="100"></progress><span>Photoshop</span>
+                <progress value="70" max="100"></progress><span>Illustrator</span>
             </div>
         </div>
-    </main>
+    </section>
+    <section class="slider-logos">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Casos de éxito en mis años de experiencia</h2>
+                <div class="slider-container row">
+                    <img class="slider-item col-md-3" src="./images/Logo Final Negativo.png" alt="">
+                    <img class="slider-item col-md-3" src="./images/Logo Milovat.png" alt="">
+                    <img class="slider-item col-md-3" src="./images/logo-header-150x144.png" alt="">
+                    <img class="slider-item col-md-3" src="./images/Logo-PNG.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Conocimientos y habilidades</h2>
-    <p>Habilidades en herramientas web y conocimientos precisos, te nombro algunas a continuación:</p>
-    <li>HTML (HyperText Markup Language)</li>
-    <li>CSS (Cascading Style Sheets)</li>
-    <li>JavaScript</li>
-    <li>React Js</li>
-
-    <h2>Casos de éxito en mis años de experiencia</h2>
-    <img src="./images/logo-header-150x144.png" alt="Picasso" width="120px">
-
-    <div class="slider-container">
-        <img class="slider-item" src="./images/Logo Final Negativo.png" alt="">
-        <img class="slider-item" src="./images/Logo Milovat.png" alt="">
-        <img class="slider-item" src="./images/logo-header-150x144.png" alt="">
-        <img class="slider-item" src="./images/Logo-PNG.png" alt="">
-    </div>
     <footer class="footer-principal">
         <!-- Etiqueta semántica -->
         <div class="social-media">
@@ -123,6 +149,7 @@
             <p>Copyright © All rights reserved</p>
         </div>
     </footer>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>

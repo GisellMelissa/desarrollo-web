@@ -2,39 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> -->
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
     <header>
         <!-- Encabezado -->
-        <nav class="navigation">
-            <ul class="navigation-bar">
-                <li class="navigation-bar-item">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="navigation-bar-item">
-                    <a href="../sections/servicios.html">Servicios</a>
-                </li>
-                <li class="navigation-bar-item">
-                    <a href="../sections/experiencia.html">Experiencia</a>
-                </li>
-                <li class="navigation-bar-item">
-                    <a href="../sections/portafolio.html">Portafolio</a>
-                </li>
-                <li class="navigation-bar-item">
-                    <a href="../sections/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navigation row">
+          <ul class="navigation-bar col-md-4 offset-md-8">
+            <li class="navigation-bar-item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="../sections/servicios.html">Servicios</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="../sections/experiencia.html">Experiencia</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="../sections/portafolio.html">Portafolio</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="../sections/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <h1>¿Deseas que te contacte para mayor información?</h1>
 
@@ -51,32 +52,24 @@
             <br>
             <div class="divider"></div>
             <label for="correo"><b>Tu dirección de correo:</b> </label>
-            <input id="correo" type="text" name="correo">
-            <br>
+            <input id="correo" type="text" name="correo"><br>
             <div class="divider"></div>
-            <b>Género:</b>
-            <select name="genero">
-                <option>Masculino</option>
-                <option>Femenino</option>
-            </select>
-            <div class="divider"></div>
-            <br>
-            <br>
+
             <b>Selecciona tus intereses: </b>
-            <br>
+            <div class="divider"></div>
 
             <input type="checkbox" name="tiendas">Tiendas Virtuales (e-Commerce)<br>
             <input type="checkbox" name="landing">Páginas Web Informativas y Coorporativas<br>
             <input type="checkbox" name="pagina">Aplicaciones Web Dinámicas<br>
+            <input type="checkbox" name="interfaces">Diseño de Interfaces<br>
             <input type="checkbox" name="otro">Otro
 
             <label>
                 <p>
-                    <b>Dudas u observaciones:</b>
+                    <b>Mas información del servicio deseado</b>
                 </p>
                 <textarea name="mensaje"></textarea>
             </label>
-                <input type="checkbox" name="Acepta" value="1" /> Acepta términos y condiciones
         </fieldset>
         <input class="btn-submit" type="submit" value="Enviar mensaje">
         <input class="btn-reset" type="reset" value="Comenzar de nuevo">
@@ -92,6 +85,7 @@
     <p>Copyright © All rights reserved</p>
         </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

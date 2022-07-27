@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6,legend,label {
     font-family: 'Quicksand', sans-serif;
 }
 
-p,main,li,select,fieldset {
+p,main,div,li,select,fieldset {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -50,11 +50,16 @@ footer {
 .slider-principal {
     background-color: #ffe9e9;
     display: flex;
-    margin-bottom: 60px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 5px solid #243A73;
+    margin: auto;
+}
+
+.slider-principal-items {
+    max-width: 850px;
+    align-items: center;
 }
 
 .slider-principal section {
@@ -64,18 +69,12 @@ footer {
     width: 450px;
 }
 
-.slider-principal img {
-    margin: 60px;
+.slider-principal .image-container {
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    .slider-principal {
-        flex-direction: column;
-    }
-    
-    .slider-principal section {
-        width: auto;
-    }
+.slider-principal img {
+    margin: 60px;
 }
 
 .button {
@@ -100,6 +99,7 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .navigation-bar-item {
@@ -135,10 +135,9 @@ footer {
     color: white;
 }
 
-div {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.slider-logos {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .social-media {
@@ -150,11 +149,15 @@ div {
 
 .social-media img {
     padding-right: 10px;
-    width: 20px;
+    width: 25px;
 }
 
 .social-media ul {
     display: flex;
+}
+
+.social-media p, .social-media ul {
+    margin-bottom: 0;
 }
 
 .btn-submit {
@@ -179,7 +182,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: scroll;
+    padding-bottom: 20px;
 }
 
 .slider-item {
@@ -203,6 +206,15 @@ div {
     margin: auto;
 }
 
+.video-container-items {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.services-container-items {
+    padding-top: 50px;
+}
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -218,23 +230,42 @@ div {
     height: 100%;
 }
 
+#skills span {
+    top: -30px;
+    padding-left: 20px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+}
+
+.skills-items {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+progress {
+    background-color: #f3f3f3;
+    border: 0;
+    width: 100%;
+    height: 22px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #243A73;
+}
+
+progress::-moz-progress-bar {
+    background-color: #243A73;
+}
+
 .page-content {
-    display: grid;
-    grid-gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-@media (min-width: 600px) {
-    .page-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 800px) {
-    .page-content {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .card {
@@ -242,13 +273,12 @@ div {
     display: flex;
     place-items: center;
     overflow: hidden;
-    padding: 1rem;
-    width: 90%;
     text-align: center;
     color: rgb(0, 0, 0);
     border: solid #243A73;
     border-radius: 20px;
     background-color: whitesmoke;
+    justify-content: center;
 }
 
 .card:hover{
@@ -279,11 +309,9 @@ div {
 .content {
     position: relative;
     display: flex;
-    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem;
     transition: transform var(--d) var(--e);
     z-index: 1;
 }
@@ -314,13 +342,28 @@ div {
     outline-offset: 3px;
 }
 
+@media (max-width: 768px) {
+    .slider-principal img {
+        margin: 0;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    .navigation-bar-item {
+        padding: 10px;        
+    }
+    .navigation-bar-item a {
+        font-size: 11px;
+    }
+}
+
 @media (hover: hover) and (min-width: 600px) {
     .card:after {
         transform: translateY(0);
     }
 
     .content {
-        transform: translateY(calc(60% - 4.5rem));
+        transform: translateY(42%);
     }
 
     .content>*:not(.title) {
@@ -362,4 +405,19 @@ div {
     .card:focus-within .content>*:not(.title) {
         transition-duration: 0s;
     }
+}
+
+.slider-experience {
+    background-image: url("https://fonte.com.co/wp-content/uploads/2021/07/FONDO-EXPERIENCIA-scaled.jpg");
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 120px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-page-experience{
+    text-align: center;
+    color: #ffffff;
 }
