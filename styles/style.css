@@ -32,6 +32,10 @@ p,main,div,li,select,fieldset {
     font-family: 'Roboto', sans-serif;
 }
 
+p{
+    color: #323232;
+}
+
 ol {
     font-family: 'Quicksand', sans-serif;
 }
@@ -107,7 +111,7 @@ footer {
 }
 
 .image-skills{
-    max-width: 100%;
+    max-width: 20%;
 }
 
 .navigation-bar-item a {
@@ -128,6 +132,7 @@ footer {
 
 .title-services {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .title-page-services {
@@ -145,6 +150,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 70px;
 }
 
 .social-media img {
@@ -183,6 +189,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    margin-top: 80px;
 }
 
 .slider-item {
@@ -420,4 +427,130 @@ progress::-moz-progress-bar {
 .title-page-experience{
     text-align: center;
     color: #ffffff;
+}
+
+.isotope-filters {
+    display: table;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.testimonials-clean {
+    color:#313437;
+  }
+  
+  .testimonials-clean p {
+    color:#323232;
+  }
+  
+  .testimonials-clean h2 {
+    margin-bottom:40px;
+    padding-top:40px;
+  }
+  
+  @media (max-width:767px) {
+    .testimonials-clean h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .testimonials-clean .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  }
+  
+  .testimonials-clean .intro p {
+    margin-bottom:0;
+  }
+  
+  .testimonials-clean .people {
+    padding:50px 0 20px;
+  }
+  
+  .testimonials-clean .item {
+    margin-bottom:32px;
+  }
+  
+  @media (min-width:768px) {
+    .testimonials-clean .item {
+      height:220px;
+    }
+  }
+  
+  .testimonials-clean .item .box {
+    padding:30px;
+    background-color:#fff;
+    position:relative;
+  }
+  
+  .testimonials-clean .item .box:after {
+    content:'';
+    position:absolute;
+    left:30px;
+    bottom:-24px;
+    width:0;
+    height:0;
+    border:15px solid transparent;
+    border-width:12px 15px;
+    border-top-color:#fff;
+  }
+  
+  .testimonials-clean .item .author {
+    margin-top:28px;
+    padding-left:25px;
+  }
+  
+  .testimonials-clean .item .name {
+    font-weight:bold;
+    margin-bottom:2px;
+    color:inherit;
+  }
+  
+  .testimonials-clean .item .title {
+    font-size:13px;
+    color:#727272;
+  }
+  
+  .testimonials-clean .item .description {
+    font-size:15px;
+    margin-bottom:0;
+  }
+  
+  .testimonials-clean .item img {
+    max-width:40px;
+    float:left;
+    margin-right:12px;
+    margin-top:-5px;
+  }
+
+@media (min-width: 1200px){
+    .h1, h1 {
+        font-size: 2.0rem;
+    }
+}
+
+.skills{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.title-experience{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.title-contact{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.paragraph-contact{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
